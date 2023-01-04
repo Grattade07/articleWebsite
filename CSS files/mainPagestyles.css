@@ -1,0 +1,166 @@
+/* stlying for the header to make elements display in a  row, adds a gap between the items and add as a margin to the edge of the page and below content. puts border on the bottom of the container */
+#header {
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    column-gap: 10px;
+    margin: 10px;
+    padding: 10px;
+
+    max-width: 100%;
+    height: auto;
+
+    border-bottom: 5px solid black;
+    background-color: rgb(114, 114, 138);
+}
+
+/* Makes the item take up 3.5x more of the available space and aligns the text */
+#headerTitle {
+    flex: 3;
+    text-align: center;
+}
+
+/* makes the links display in a row, makes the font smaller and positions the text centrally and horizontally. Adds small gap between the items */
+#headerNav {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.7em;
+    justify-content: center;
+    align-items: center;
+
+    flex: 1;
+
+    column-gap: 8px;
+}
+
+/* text positioning for summary section */
+#summary {
+    text-align: center;
+}
+
+/* targets all the p elements in the #summary container to increase the text size */
+#summary>p {
+    font-size: 18px;
+}
+
+/* targets the img element in the #summary container */
+#summary>img {
+    width: 25%;
+}
+
+/* adds border to top and bottom of "main" element*/
+main {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+/* styling for each overall system section */
+.systemInformation {
+    display: flex;
+    flex-direction: row;
+
+    max-height: 380px;
+}
+/* makes items display in a row, centers the text and places items in the center of the vertical axis. makes item take up more space than the content sections */
+.consoleTitle {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    text-align: center;
+    align-items: center;
+
+    border-right: 2px solid black;
+    margin-right: 15px;
+    padding-right: 10px;
+
+    width: 510px; /* makes sure the borders are uniform */
+
+}
+
+.consoleButtons { /* positioning of buttons in the console title section */
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+
+/* styling for font size and item growth. adds gap between items */
+.consoleContent {
+    flex: 1;
+    font-size: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+
+    column-gap: 20px;
+}
+
+.consoleHistory {
+    font-size: 18px;
+}
+
+/* styling for pros and cons sections */
+.prosAndCons {
+    max-width: 316px;
+}
+
+/* styling for the rating tables */
+.bestRatedTable {
+    max-width: 50%;
+    text-align: left;
+}
+
+/* adds background colour to Playstation section */
+#playstationInfo {
+    background-color: rgb(131, 131, 202);
+}
+
+/* adds background colour to Xbox section */
+#xboxInfo {
+    background-color: rgb(99, 190, 99);
+}
+
+/* adds background colour to PC section */
+#pcInfo {
+    background-color: rgb(158, 156, 156);
+}
+
+/* positioning and background colour for quote section */
+#quote {
+    text-align: center;
+    background-color: rgb(206, 202, 202);
+    padding: 15px;
+}
+
+/* positioning and background colour for both form sections*/
+#forms {
+    text-align: center;
+    background-color: rgb(206, 202, 202);
+    padding: 15px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 100px;
+}
+
+/* styling for footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 450px;
+
+    background-color: rgb(114, 114, 138);
+}
+
+#comments { /* positioning of inputs for the comments section */
+    display: flex;
+    align-items: center;
+
+    gap: 50px;
+}
+
+.liked { /* changes background for liked articles */
+    background-color: green;
+}

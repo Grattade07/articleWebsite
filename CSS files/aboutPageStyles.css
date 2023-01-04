@@ -1,0 +1,19 @@
+/* aligns all text to the center of the webpage */
+body {
+    text-align: center;
+}
+
+/* styling for the header element */
+header {
+    border-bottom: 5px solid black;
+    background-color: rgb(114, 114, 138);
+}
+
+/* styling for the footer element */
+
+footer {
+    border-top: 5px solid black;
+    background-color: rgb(114, 114, 138);
+
+    font-size: 18px;
+}
